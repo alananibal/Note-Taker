@@ -24,15 +24,15 @@ function filterById(id, notesArray) {
 };
 
 // function to create note
-function createNewNote(body, notesArray) {
-    const note = body;
-    notesArray.push(note);
-    fs.writeFileSync(
-        path.join(__dirname, './develop/db/db.json'),
-        JSON.stringify({notes: notesArray }, null, 2)
-    );
-    return note;
-}
+// function createNewNote(body, notesArray) {
+//     const note = body;
+//     notesArray.push(note);
+//     fs.writeFileSync(
+//         path.join(__dirname, './develop/db/db.json'),
+//         JSON.stringify({notes: notesArray }, null, 2)
+//     );
+//     return note;
+// }
 // function to validate the notes entry
 // need to check Id
 function validateNote(note) {
@@ -69,16 +69,16 @@ app.get('/api/notes/:id', (req,res) =>{
 });
 
 // Route to create a note
-app.post('/api/notes', (req, res) =>{
-    req.body.id = notes.length.toString();
+// app.post('/api/notes', (req, res) =>{
+//     req.body.id = notes.length.toString();
 
-    if(!validateNote(req.body)) {
-        res.status(400).send('the note is not properly formated.');
-    } else {
-        const note = createNewNote(req.body, notes);
-        res.json(note);
-    }
-});
+//     if(!validateNote(req.body)) {
+//         res.status(400).send('the note is not properly formated.');
+//     } else {
+//         const note = createNewNote(req.body, notes);
+//         res.json(note);
+//     }
+// });
 
 
 
