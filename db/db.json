@@ -1,0 +1,39 @@
+{
+  "notes": [
+    {
+      "title": "First Note",
+      "text": "Note text",
+      "id": "0"
+    },
+    {
+      "title": "Second Note",
+      "text": "Note text",
+      "id": "1"
+    },
+    {
+      "title": "Third Note",
+      "text": "Note text",
+      "id": "2"
+    },
+    {
+      "title": "Forth Note",
+      "text": "Note text",
+      "id": "3"
+    },
+    {
+      "title": "fith Note",
+      "text": "Note text",
+      "id": "4"
+    },
+    {
+      "title": "sixth Note",
+      "text": "Note text",
+      "id": "5"
+    },
+    {
+      "title": "Helo",
+      "text": "aksjhsakf",
+      "id": "6"
+    }
+  ]
+}
